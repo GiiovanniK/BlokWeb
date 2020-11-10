@@ -73,12 +73,12 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Je focus:** Responsive
 
-**Je opdracht:** https://www.spotify.com/us/ (als er ingelogd is)
+**Je opdracht:** https://www.spacex.com/
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
-<img src="images/spaceXHome.png" width="375px" alt="Homepagina als er ingelogd is op Spotify. Dit laat recent geluisterde muziek zien waarbij je de web player kan openen. Ook staat de meest geluisterd artiest en nummer van de afgelopen tijd weergegeven.">
+<img src="images/spaceXHome.png" width="375px" alt="SpaceX Homepage">
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/spaceXDetail.png" width="375px" alt="Pagina waarbij je Spotify Premium plannen kan vergelijken en aanpassen. Ook wordt er informatie gegeven over Spotify Premium.">
+<img src="images/spaceXDetail.png" width="375px" alt="SpaceX raket detailpagina">
