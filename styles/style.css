@@ -1,5 +1,509 @@
-/* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
+/* General */
+* {
+    margin: 0;
+    padding: 0;
 }
 
+/* Fonts */
+@font-face {
+    font-family: D-DIN-Medium;
+    src: url(../fonts/D-DIN.woff2) format("woff2"), url(../fonts/D-DIN.woff) format("woff"), url(../fonts/D-DIN.otf) format("opentype");
+    font-weight: 400;
+    font-display: block;
+}
+
+@font-face {
+    font-family: D-DIN-Light;
+    src: url(../fonts/D-DIN.woff2) format("woff2"), url(../fonts/D-DIN.woff) format("woff"), url(../fonts/D-DIN.otf) format("opentype");
+    font-weight: 400;
+    font-display: block;
+}
+
+@font-face {
+    font-family: D-DIN-Bold;
+    src: url(../fonts/D-DIN-Bold.woff2) format("woff2"), url(../fonts/D-DIN-Bold.woff) format("woff"), url(../fonts/D-DIN-Bold.otf) format("opentype");
+    font-weight: 400;
+    font-display: block;
+}
+
+@font-face {
+    font-family: D-DIN-Regular;
+    src: url(../fonts/D-DIN.woff2) format("woff2"), url(../fonts/D-DIN.woff) format("woff"), url(../fonts/D-DIN.otf) format("opentype");
+    font-weight: 400;
+    font-display: block;
+}
+
+/* button styling */
+a.button {
+    display: inline-block;
+    width: 10em;
+    padding: .25em 1em;
+    margin: 2em 0 0;
+    border: 2px solid #fff;
+    font: 0.875em/3.125em D-DIN-Bold, Arial, Verdana, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+}
+
+a.largeButton {
+    display: inline-block;
+    width: 15em;
+    padding: .5em 1em;
+    margin: 2em 0 0;
+    border: 2px solid #fff;
+    font: 0.875em/3.125em D-DIN-Bold, Arial, Verdana, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* text shadow */
+.shadow {
+    text-shadow: 0 0 5px black;
+}
+
+body {
+    background-color: black;
+}
+
+/* general text styling */
+h1,
+h2,
+h3 {
+    color: white;
+    text-transform: uppercase;
+}
+
+h2 {
+    font: 3em D-DIN-Bold, Arial, Verdana, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h3 {
+    font: 1.25em/2em D-DIN-Medium, Arial, Verdana, sans-serif;
+}
+
+p {
+    color: white;
+    font-family: D-DIN-Regular;
+    line-height: 1.75em;
+    margin-top: 1.25em;
+}
+
+/* Navigation */
+.header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 6.25em;
+}
+
+.header-inner {
+    position: relative;
+    width: 100%;
+    max-width: 87.5em;
+    margin: 0 auto;
+    top: 2em;
+    left: 2em;
+}
+
+/* Set menu horizontal */
+#navigation ul {
+    display: flex;
+    list-style-type: none;
+}
+
+#navigation li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1em;
+}
+
+#navigation li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font: 0.875em/1.75em D-DIN-Bold, Arial, Verdana, sans-serif;
+}
+
+.hamburger {
+    position: absolute;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 1.25em;
+    cursor: pointer;
+    right: 3.125em;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+.showMenu {
+    display: block;
+}
+
+#logo {
+    width: 15em;
+    height: auto;
+}
+
+#logo .fill-white {
+    fill: #fff;
+}
+
+/* Main */
+.section {
+    display: block;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+.section-inner {
+    position: relative;
+    height: 100%;
+    max-width: 87.5em;
+    margin: 0 auto;
+}
+
+/* text positioning */
+.left-bottom {
+    position: absolute;
+    bottom: 15%;
+    left: 3.125em;
+    width: 50%;
+    max-width: 32.5em;
+}
+
+.left-top {
+    position: absolute;
+    top: 15%;
+    left: 3.125em;
+    width: 50%;
+    max-width: 32.5em;
+}
+
+.right-top {
+    position: absolute;
+    top: 13%;
+    right: 3em;
+    width: 50%;
+    max-width: 32.5em;
+}
+
+.right-mid {
+    position: absolute;
+    top: 30%;
+    right: 3.125em;
+    width: 50%;
+    max-width: 32.5em;
+}
+
+.inner-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    text-align: center;
+    transform: translate(-50%, -50%) translateY(-3em);
+}
+
+.inner-center-top {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    width: 90%;
+    max-width: 60em;
+    text-align: center;
+    transform: translate(-50%, 0);
+}
+
+.inner-right-middle {
+    position: absolute;
+    top: 50%;
+    right: 3em;
+    max-width: 32.5em;
+    transform: translate(0, -50%);
+}
+
+.inner-left-middle {
+    position: absolute;
+    text-align: left;
+    width: 50%;
+    top: 50%;
+    left: 3em;
+    max-width: 32.5em;
+    transform: translate(0, -50%);
+}
+
+/* HOME > index.html */
+/* featured */
+#featured>.background {
+    background-image: url(../images/desktop/launches_starlink_prelaunch.webp);
+}
+
+#featured h1 {
+    font: 6.25em/1em D-DIN-Bold, Arial, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 3em;
+    margin-bottom: .500em;
+}
+
+#featured h3 {
+    font: 1.25em/2em D-DIN-Medium, Arial, Verdana, sans-serif;
+    font-weight: 400;
+    margin: auto auto 0.625em;
+}
+
+/* Crew-1 recap */
+#crew1-recap>.background {
+    background-image: url(../images/desktop/dragon-window-desktop.webp);
+}
+
+/* Dragon docking simulator */
+#dragon-dock-sim>.background {
+    background-image: url(../images/desktop/iss_game.webp);
+}
+
+/* Starship */
+#starship>.background {
+    background-image: url(../images/desktop/SN8.webp);
+}
+
+/* Lunar starship */
+#lunar-starship>.background {
+    background-image: url(../images/desktop/home_moon.webp);
+}
+
+/* MARS > mars.html*/
+
+/* featured */
+#mars-featured>.background {
+    background-image: url(../images/desktop/mars_feature.webp);
+}
+
+#mars-featured h1 {
+    font: 6.25em/1.5em D-DIN-Bold, Arial, Verdana, sans-serif;
+}
+
+/* Elon Musk quote */
+#mars-humans>.background {
+    background-image: url(../images/desktop/mars_humans.webp);
+}
+
+#mars-humans q {
+    color: white;
+    font: 1.5em/1.75em D-DIN-Medium, Arial, Verdana, sans-serif;
+}
+
+#quote {
+    font: 1.5em D-DIN-Medium, Arial, Verdana, sans-serif;
+}
+
+/* Why Mars? */
+#mars-why>.background {
+    background-image: url(../images/desktop/mars_why.webp);
+}
+
+#mars-why h2 {
+    font: 2.875em/1em D-DIN-Bold, Arial, Verdana, sans-serif;
+}
+
+#mars-why dl {
+    font: 0.875em D-DIN-Bold, Arial, Verdana, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    color: white;
+    margin-top: 3em;
+}
+
+#mars-why dd {
+    text-align: right;
+    font: 600 16px D-DIN-Regular, Arial, Verdana, sans-serif;
+}
+
+#mars-why dl dt,
+dl dd {
+    width: 50%;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.seperation {
+    width: 100%;
+    border-bottom: 2px solid rgba(46, 49, 49, .7);
+}
+
+#mars-vehicle>.background {
+    background-image: url(../images/desktop/starship_vehicle.webp);
+}
+
+/* #mars-and-back>.background {
+    background-image: url(../images/desktop/mars_humans.webp);
+} */
+
+/* background video, mars fueling */
+#mars-fueling video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#mars-landing>.background {
+    background-image: url(../images/desktop/mars_landing.webp);
+}
+
+/* Footer */
+footer {
+    padding: 2.75em;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+footer li a {
+    text-decoration: none;
+    margin: 0 .5em;
+    font: 0.8125em/1.5em D-DIN-Bold, Arial, Verdana, sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+
+#copyright {
+    font: 0.8125em D-DIN-Regular, Arial, Verdana, sans-serif;
+    margin: 0 1.25em;
+    color: #979797;
+    text-transform: uppercase;
+}
+
+/* Media queries */
+@media screen and (max-width:960px) {
+    #logo {
+        position: absolute;
+        width: 10.700em;
+        margin-top: 1em;
+        margin-left: 0.9375em;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+    }
+
+    .header-inner {
+        left: unset;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    #crew1-recap>.background {
+        background-image: url(../images/mobile/dragon-window-mobile.jpg);
+    }
+
+    #dragon-dock-sim>.background {
+        background-image: url(../images/mobile/iss_game_mobile.webp);
+    }
+
+    #starship>.background {
+        background-image: url(../images/mobile/SN8-mobile.webp);
+    }
+
+    #lunar-starship>.background {
+        background-image: url(../images/mobile/home_moon_mobile.webp);
+    }
+
+    #mars-why>.background {
+        background-image: url(../images/mobile/mars_why-mobile.webp);
+    }
+
+    mars-vehicle>.background {
+        background-image: url(../images/mobile/starship_vehicle-mobile);
+    }
+
+    h2 {
+        font: 2em D-DIN-Bold, Arial, Verdana, sans-serif;
+    }
+
+    .right-mid {
+        top: 10%;
+    }
+
+    .left-bottom,
+    .left-top,
+    .right-bottom,
+    .right-top {
+        width: auto;
+        max-width: none;
+        right: 1.25em;
+        left: 1.25em;
+    }
+
+    .left-top {
+        top: 2.5em;
+    }
+
+    #copyright {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1.5em;
+    }
+
+    #hamburger {
+        top: 25%;
+        right: 1.25em;
+    }
+
+    .inner-left-bottom,
+    .inner-left-middle,
+    .inner-left-top,
+    .inner-right-bottom,
+    .inner-right-middle,
+    .inner-right-top {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        -webkit-transform: none;
+        transform: none;
+        padding: 40px 20px;
+        width: auto;
+    }
+
+    #mars-featured h1 {
+        font: 3em D-DIN-Bold, Arial, Verdana, sans-serif;
+        margin-bottom: 5%;
+    }
+
+    #mars-featured h3 {
+        font: 1em/1.25em D-DIN-Bold, Arial, Verdana, sans-serif;
+    }
+}
