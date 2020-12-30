@@ -24,14 +24,33 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+-dit ging goed & dit was lastig-
 
+Feedback:
+- aanpassen gebruik van divs en classes/id's naar pseudo-classes
+- Javascript best practices - var, let, const in combinatie met arrow function etc.
+- max-width van mediaquery aanpassen naar min-width (mobile-first)
+- meer doen met animaties
+- hamburger menu werkend maken
+- font-awesome hamburger icon vervangen
+- microinteractie met SVG. Op mobiel werken met transforms en gestures (pinch, spread etc). Gebruiker SVG laten manipuleren.
+
+**Screenshot(s):**
+
+-screenshot(s) van hoe ver je bent met korte uitleg-
 
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+-dit ging goed & dit was lastig-
 
+Feedback:
+- minder divs en classes/id's
+- gekkere animaties toevoegen, beetje out of the box qua animaties
+
+**Screenshot(s):**
+
+-screenshot(s) van hoe ver je bent met korte uitleg-
 
 
 ## Voortgang 1 (week 3)
@@ -39,6 +58,12 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ### Stand van zaken
 
 -dit ging goed & dit was lastig-
+
+Feedback:
+- picture html element i.p.v. img
+- bekijken sourceset voor background-images
+- i.p.v. form een definition list
+- minder divs en classes/id's. Code verkleinen en flexbox gebruiken op tekst positionering ipv hard-coded positioneringen.
 
 **Screenshot(s):**
 
