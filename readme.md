@@ -27,7 +27,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 -dit ging goed & dit was lastig-
 
 Feedback:
-- aanpassen gebruik van divs en classes/id's naar pseudo-classes
+- aanpassen gebruik van divs en classes/id's naar pseudo-classes waar mogelijk
 - Javascript best practices - var, let, const in combinatie met arrow function etc.
 - max-width van mediaquery aanpassen naar min-width (mobile-first)
 - meer doen met animaties
@@ -45,7 +45,7 @@ Feedback:
 -dit ging goed & dit was lastig-
 
 Feedback:
-- minder divs en classes/id's
+- minder divs en classes/id's waar mogelijk
 - gekkere animaties toevoegen, beetje out of the box qua animaties
 
 **Screenshot(s):**
@@ -63,7 +63,7 @@ Feedback:
 - picture html element i.p.v. img
 - bekijken sourceset voor background-images
 - i.p.v. form een definition list
-- minder divs en classes/id's. Code verkleinen en flexbox gebruiken op tekst positionering ipv hard-coded positioneringen.
+- minder divs en classes/id's waar mogelijk. Code verkleinen en flexbox gebruiken op tekst positionering ipv hard-coded positioneringen.
 
 **Screenshot(s):**
 
