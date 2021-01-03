@@ -33,7 +33,7 @@ Feedback:
 - meer doen met animaties
 - hamburger menu werkend maken
 - font-awesome hamburger icon vervangen
-- microinteractie met SVG. Op mobiel werken met transforms en gestures (pinch, spread etc). Gebruiker SVG laten manipuleren.
+- microinteractie met SVG. Op mobiel evt. werken met transforms en gestures (pinch, spread etc). Gebruiker SVG laten manipuleren.
 
 **Screenshot(s):**
 
