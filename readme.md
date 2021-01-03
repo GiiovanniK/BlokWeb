@@ -75,8 +75,8 @@ Feedback:
 
 | student 1      | student 2          | student 3    | student 4        |
 | ---            | ---                | ---          | ---              |
-| Zit ik op de   | en dit             | en ik dit    | en dan ik dat    |
-| goede weg?     | dit als er tijd is | nog een punt | dit wil ik zeker |
+| Zit ik op de goede weg?  | en dit             | en ik dit    | en dan ik dat    |
+|      | dit als er tijd is | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
 
 ### Verslag van meeting
