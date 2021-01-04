@@ -24,7 +24,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--dit ging goed & dit was lastig-
+Lastig was de microinteractie met SVG, om deze goed te krijgen op zowel mobiel als desktop, omdat er gecheckt moest worden welke elementen wel of niet laten zien
+moesten worden.
 
 Feedback:
 - aanpassen gebruik van divs en classes/id's naar pseudo-classes waar mogelijk
@@ -57,7 +58,7 @@ Feedback:
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+Lastig om alle positioneringen zowel op mobiel als desktop perfect te krijgen. Voor de rest ging het maken van de content van de website goed.
 
 Feedback:
 - picture html element i.p.v. img
